@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Main Roles | Upcoming Movies</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="news.html">Latest News</a></li>
+        <li><a href="movies.html">Latest Movies</a></li>
+        <li><a href="roles.html" class="active">Main Roles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="roles-section">
+      <h1>🎭 Main Roles in Upcoming Films</h1>
+      <div class="roles-grid">
+        
+        <div class="role-card">
+          <img src="images/actor1.jpeg" alt="SRK" class="poster landscape" />
+          <h3>Shah Rukh Khan</h3>
+          <p>Lead Actor – Jawan 2</p>
+          <span>Known for: Jawan, Pathaan, Raees</span>
+        </div>
+
+        <div class="role-card">
+          <img src="images/director1.jpg" alt="Atlee" class="poster landscape" />
+          <h3>Atlee</h3>
+          <p>Director – Jawan 2</p>
+          <span>Known for: Bigil, Mersal, Raja Rani</span>
+        </div>
+
+        <div class="role-card">
+          <img src="images/actor2.png" alt="Ryan Reynolds">
+          <h3>Ryan Reynolds</h3>
+          <p>Lead Actor – Deadpool</p>
+          <span>Known for: Deadpool, Free Guy, Red Notice</span>
+        </div>
+
+        <div class="role-card">
+          <img src="images/director2.jpg" alt="Zack Snyder">
+          <h3>Zack Snyder</h3>
+          <p>Director – Rebel Moon</p>
+          <span>Known for: Justice League, 300, Watchmen</span>
+        </div>
+
+        <div class="role-card">
+          <img src="images/actor3.jpg" alt="Akshay Kumar">
+          <h3>Akshay Kumar</h3>
+          <p>Lead Actor - Jolly LLB 3</p>
+          <span>Known for: Jolly LLB, Holiday, Housefull</span>
+        </div>
+
+        <div class="role-card">
+          <img src="images/director3.jpeg" alt="Michael Chaves">
+          <h3>Michael Chaves</h3>
+          <p>Director – The Conjuring : Last Rites</p>
+          <span>Known for: The Conjuring: The Devil Made Me Do It, The Curse of La Llorona</span>
+        </div>
+
+      </div>
+      <!-- Role Modal -->
+<div id="roleModal" class="role-modal">
+  <div class="role-modal-content">
+    <span class="close-role">&times;</span>
+    <img id="modalRoleImg" src="" alt="Role Image">
+    <h2 id="modalRoleName"></h2>
+    <p id="modalRoleDesc"></p>
+    <span id="modalRoleKnownFor"></span>
+  </div>
+</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Upcoming Movies. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

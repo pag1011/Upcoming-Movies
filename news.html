@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latest News | Upcoming Movies</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="news.html" class="active">Latest News</a></li>
+        <li><a href="movies.html">Latest Movies</a></li>
+        <li><a href="roles.html">Main Roles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="news-section">
+      <h1>🎬 Latest Movie News</h1>
+
+      <div class="news-container">
+      <div class="news-card center-card" data-title="SRK’s New Sci-Fi Thriller Announced" data-image="images/news1.jpeg" data-full="Shah Rukh Khan gears up for a never-seen-before role in a futuristic sci-fi movie set in 2090. The film is rumored to feature space travel and AI-driven warfare. Release expected mid-2026.">
+
+          <img src="images/news1.jpeg" alt="News 1" class="poster portrait" />
+          <h2>SRK’s New Sci-Fi Thriller Announced</h2>
+          <p class="news-short">
+            Shah Rukh Khan gears up for a never-seen-before role in a futuristic sci-fi movie set in 2090...
+            <span class="dots">...</span>
+            <span class="news-full"> The film is rumored to feature space travel and AI-driven warfare. Release expected mid-2026.</span>
+          </p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+
+        <div class="news-card center-card" data-title="Marvel Confirms Deadpool & Wolverine" data-image="images/news2.jpeg" data-full="The long-awaited team-up between Deadpool and Wolverine has finally been confirmed by Marvel Studios. The movie will merge the Fox X-Men universe with the MCU timeline. Releasing October 2025.">
+          <img src="images/news2.jpeg" alt="News 2" class="poster portrait" />
+          <h2>Marvel Confirms Deadpool & Wolverine</h2>
+          <p class="news-short">
+            The long-awaited team-up between Deadpool and Wolverine has finally been confirmed by Marvel Studios...
+            <span class="dots">...</span>
+            <span class="news-full"> The movie will merge the Fox X-Men universe with the MCU timeline. Releasing October 2025.</span>
+          </p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+
+        <div class="news-card center-card" data-title="Jawan 2 Shooting Starts in September" data-image="images/news3.jpg" data-full="After the massive success of Jawan, director Atlee is back with the sequel, starting shoot in Mumbai. Cast includes Nayanthara, SRK and new faces from the South Indian industry. Action-packed drama guaranteed!">
+          <img src="images/news3.jpg" alt="News 3" class="poster landscape" />
+          <h2>Jawan 2 Shooting Starts in September</h2>
+          <p class="news-short">
+            After the massive success of Jawan, director Atlee is back with the sequel, starting shoot in Mumbai...
+            <span class="dots">...</span>
+            <span class="news-full"> Cast includes Nayanthara, SRK and new faces from the South Indian industry. Action-packed drama guaranteed!</span>
+          </p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+      </div>
+      <!-- Modal for Full News -->
+<div id="newsModal" class="modal">
+  <div class="modal-content">
+    <span class="close-news">&times;</span>
+    <img id="modalNewsImg" src="" alt="News Image">
+    <h2 id="modalNewsTitle"></h2>
+    <p id="modalNewsText"></p>
+  </div>
+</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Upcoming Movies. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

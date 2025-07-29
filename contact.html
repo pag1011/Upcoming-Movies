@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Upcoming Movies</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="news.html">Latest News</a></li>
+        <li><a href="movies.html">Latest Movies</a></li>
+        <li><a href="roles.html">Main Roles</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>📨 Contact Us</h1>
+      <p>If you have any suggestions, feedback, or want to stay updated — drop us a message!</p>
+
+      <form class="contact-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        
+        <label class="newsletter">
+          <input type="checkbox" name="subscribe" />
+          Subscribe to movie updates
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Upcoming Movies. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

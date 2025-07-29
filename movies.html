@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latest Movies | Upcoming Movies</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="news.html">Latest News</a></li>
+        <li><a href="movies.html" class="active">Latest Movies</a></li>
+        <li><a href="roles.html">Main Roles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="movies-section">
+      <h1>🎥 Upcoming Movies</h1>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-genre="all">All</button>
+        <button class="filter-btn" data-genre="action">Action</button>
+        <button class="filter-btn" data-genre="sci-fi">Sci-Fi</button>
+        <button class="filter-btn" data-genre="superhero">Superhero</button>
+        <button class="filter-btn" data-genre="horror">Horror</button>
+        <button class="filter-btn" data-genre="comedy">Comedy</button>
+      </div>
+
+      <div class="movies-grid">
+        <div class="movie-card" data-genre="sci-fi">
+          <img src="images/movie1.png" alt="Movie 1">
+          <h3>Rebel Moon: Part 2</h3>
+          <p>Genre: Sci-Fi<br>Release: Aug 5, 2025</p>
+        </div>
+
+        <div class="movie-card" data-genre="action">
+          <img src="images/movie2.png" alt="Movie 2" class="poster landscape" />
+          <h3>Jawan 2</h3>
+          <p>Genre: Action<br>Release: Sep 18, 2025</p>
+        </div>
+
+        <div class="movie-card" data-genre="superhero">
+          <img src="images/movie3.jpg" alt="Movie 3">
+          <h3>Deadpool & Wolverine</h3>
+          <p>Genre: Superhero<br>Release: Oct 12, 2025</p>
+        </div>
+
+        <div class="movie-card" data-genre="action">
+          <img src="images/movie4.jpg" alt="Movie 4" class="poster landscape" />
+          <h3>War 2</h3>
+          <p>Genre: Action<br>Release: Nov 30, 2025</p>
+        </div>
+
+        <div class="movie-card" data-genre="horror">
+          <img src="images/movie5.png" alt="Movie 5">
+          <h3>The Conjuring: Last Rites</h3>
+          <p>Genre: Horror<br>Release: Sep 5, 2025</p>
+        </div>
+
+        <div class="movie-card" data-genre="comedy">
+          <img src="images/movie6.jpg" alt="Movie 6" class="poster landscape" />
+          <h3>Jolly LLB 3</h3>
+          <p>Genre: Comedy & Drama<br>Release: Sep 19, 2025</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Upcoming Movies. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

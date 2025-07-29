@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upcoming Movies</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="news.html">Latest News</a></li>
+        <li><a href="movies.html">Latest Movies</a></li>
+        <li><a href="roles.html">Main Roles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Upcoming Movies</h1>
+    <p>Discover the most anticipated films hitting the screens soon!</p>
+    <a href="movies.html" class="btn">Explore Movies</a>
+  </div>
+</section>
+
+<section class="highlighted-movies">
+  <h2>🔥 Most Awaited Releases</h2>
+  <div class="movie-grid">
+    <div class="movie-card" data-title="Rebel Moon: Part 2" data-genre-info="Sci-Fi" data-date="Aug 5, 2025" data-image="images/movie1.png">
+      <img src="images/movie1.png" alt="Movie Poster 1" class="poster portrait" />
+      <h3>Rebel Moon: Part 2</h3>
+      <p>Genre: Sci-Fi | Release: Aug 5, 2025</p>
+    </div>
+    <div class="movie-card" data-title="Jawan 2" data-genre-info="Action" data-date="Sep 18, 2025" data-image="images/movie2.png">
+      <img src="images/movie2.png" alt="Movie Poster 2" class="poster landscape" />
+      <h3>Jawan 2</h3>
+      <p>Genre: Action | Release: Sep 18, 2025</p>
+    </div>
+    <div class="movie-card" data-title="Deadpool & Wolverine" data-genre-info="Superhero" data-date="Oct 12, 2025" data-image="images/movie3.jpg">
+      <img src="images/movie3.jpg" alt="Movie Poster 3" class="poster portrait" />
+      <h3>Deadpool & Wolverine</h3>
+      <p>Genre: Superhero | Release: Oct 12, 2025</p>
+    </div>
+  </div>
+  <!-- Movie Modal -->
+<div id="movieModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="Movie Poster" />
+    <h2 id="modalTitle"></h2>
+    <p id="modalDetails"></p>
+  </div>
+</div>
+</section>
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Upcoming Movies. All rights reserved.</p>
+  </footer>
+</body>
+</html>
